@@ -17,7 +17,7 @@
 	</div>
 	<p>This page has a tab-like configuration, which has a persistent information panel with a set height scrolling content div. You can check the code by right clicking and viewing the source. I have not obfuscated the code. This can also be found on gitHub by clicking the icon on the left.</p>
 	
-	<a><img class='portfolioImg'></img></a>
+	<a><div class='portfolioImg'></div></a>
 
 	<div class="ribbon-wrapper arrow_box">
 		<div class="ribbon-front">
@@ -27,7 +27,7 @@
 	</div>	
 	<p>This page has more of a floating content div. That I changed out based on which nav item is clicked. I do with with jQuery and CSS3 animations. The way I accomplish this is by listening to the end of the CSS3 animation and changing the content html with jQuery. You can check the code by right clicking and viewing the source. I have not obfuscated the code. This can also be found on gitHub by clicking the icon on the left.</p>
 	
-	<a href="http://www.muddywatersoftware.com" target="_blank"><img class='muddyWaterImg'></img></a>
+	<a href="http://www.muddywatersoftware.com" target="_blank"><div class='muddyWaterImg'></div></a>
 	
 HTML;
 

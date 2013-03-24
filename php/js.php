@@ -17,7 +17,7 @@
 	</div>
 	<p>I built this page to utilize jQuery to change the content HTML. I do this by creating a JavaScript function that calls the content div and replaces the HTML with jQuery. This is done by listening to the css3 animation end. When the animation ends, I can tell the target of the click which allows me to serve up the correct HTML. You can browse to muddywatersoftware.com, right click, and view source. This can also be found on gitHub by clicking the icon on the left.</p>
 
-<a href="http://www.muddywatersoftware.com" target="_blank"><img class='muddyWaterImg'></img></a>
+<a href="http://www.muddywatersoftware.com" target="_blank"><div class='muddyWaterImg'></div></a>
 
 	<div class="ribbon-wrapper arrow_box">
 		<div class="ribbon-front">

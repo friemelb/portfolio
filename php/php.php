@@ -21,7 +21,7 @@ ini_set("display_errors", 1);
 	</div>
 	<p>This is an example of how to use JavaScript, jQuery, and PHP to serve up web content. What is happening is that I have attached a jQuery click event to the tabs. When the click happen it hits a PHP page to request the content that is supposed to be served to the content div. I have separated the pages into different files for easy of maintenance. When the PHP page returns the HTML content, I use jQuery to set the HTML of the content div. This creates a single load web page with a PHP backend. This can be found on gitHub by clicking the icon on the left.</p>
 
-<a><img class='portfolioImg'></img></a>
+<a><div class='portfolioImg'></div></a>
 
 	<div class="ribbon-wrapper arrow_box">
 		<div class="ribbon-front">
