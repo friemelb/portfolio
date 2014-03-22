@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Condiment);
+body {
+  margin: 0px;
+  width: 100%;
+  background: url("../../resources/images/background.png") repeat; }
+
+@media only screen and (max-width: 845px) {
+  .flex-item {
+    display: none; }
+
+  .flex-item:first-child {
+    display: inline; }
+
+  .flex-item:last-child {
+    display: inline !important; }
+
+  img, iframe {
+    display: none; } }
+.flex-container {
+  background: #56baec;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
+
+.flex-item {
+  background-color: inherit;
+  height: 80px;
+  min-width: 210px;
+  line-height: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.flex-item:hover {
+  color: blue;
+  font-size: 1.7em; }
+
+.flex-item:first-child {
+  font-size: 1.7em;
+  font-family: 'Condiment', cursive; }
+
+.flex-item:last-child {
+  display: none; }
+
+.active-nav {
+  color: blue; }
+
+.flex-container li ul {
+  position: absolute;
+  left: -40px;
+  width: 100%;
+  display: none; }
+
+.flex-container li ul li {
+  float: none;
+  display: inline;
+  width: 100%;
+  line-height: 35px;
+  padding: 5px;
+  border-top-width: 1px;
+  border-top-style: dashed;
+  border-color: black; }
+
+.flex-container li ul li:hover {
+  background: #1FC4FF; }
+
+.flex-container li:hover ul {
+  display: block; }
+
+.flex-container li ul li {
+  display: block;
+  background: #56baec; }
+
+.content {
+  height: 100%;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .content .label {
+    font-size: 1.5em;
+    margin-top: 10px; }
+  .content .label:before {
+    content: '//'; }
+  .content .words {
+    font-size: 1em; }
+  .content .block:last-child {
+    height: 100px; }
+
+.socialPanel {
+  width: 83px; }
+
+.linkedInImg {
+  background: url("../../resources/images/linkedin-icon.gif");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  float: left; }
+
+.gitHubImg {
+  background: url("../../resources/images/github_icon.png");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  float: right; }

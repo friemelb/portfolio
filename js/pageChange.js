@@ -1,10 +1,18 @@
-$('.navMenu ul li').click(function (event) {	
+$('.flex-container li').click(function (event) {	
 	//change selected tab
-    var selected = $(".navMenu ul").find('.activeTab').get(0);
-    $(selected).removeClass('activeTab');
-    $(this).addClass('activeTab');
+    var selected = $('.flex-container').find('.active-nav').get(0);
+    $(selected).removeClass('active-nav');
+    $(this).addClass('active-nav');
 	
 	switch($(this).text().toLowerCase()){
+		case 'bradley friemel':
+		$.ajax({
+		  type: "POST",
+		  url: "php/home.php"
+		}).done(function( msg ) {
+		  $('.content').html(msg);
+		});
+		break;
 		case 'resume':
 		$.ajax({
 		  type: "POST",
@@ -13,7 +21,7 @@ $('.navMenu ul li').click(function (event) {
 		  $('.content').html(msg);
 		});
 		break;
-		case 'js examples':
+		case 'js':
 		$.ajax({
 		  type: "POST",
 		  url: "php/js.php"
@@ -21,15 +29,7 @@ $('.navMenu ul li').click(function (event) {
 		  $('.content').html(msg);
 		});
 		break;
-		case 'php examples':
-		$.ajax({
-		  type: "POST",
-		  url: "php/php.php"
-		}).done(function( msg ) {
-		  $('.content').html(msg);
-		});
-		break;
-		case 'html/css examples':
+		case 'html/css':
 		$.ajax({
 		  type: "POST",
 		  url: "php/html.php"
@@ -38,12 +38,14 @@ $('.navMenu ul li').click(function (event) {
 		});
 		break;
 		default:
-		$.ajax({
-		  type: "POST",
-		  url: "php/broken.php"
-		}).done(function( msg ) {
-		  $('.content').html(msg);
-		});	
+		//Doesn't redirect if its a drop down
+		if($(this).children('ul').length < 0){
+			$.ajax({
+			  type: "POST",
+			  url: "php/broken.php"
+			}).done(function( msg ) {
+			  $('.content').html(msg);
+			});	
+		}
 	}
-	
 });

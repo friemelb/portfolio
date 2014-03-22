@@ -1,23 +1,41 @@
 <?php
 	$html = <<<HTML
-	<div class="ribbon-wrapper arrow_box">
-		<div class="ribbon-front">
-            <p class="ribbonText">Education</p>
+		<div class="block">
+			<div class="label">
+				Education
+			</div>	
+			<div class="words">
+				<p>Texas A&M University, Corpus Christi, Texas</p>
+				<p>Bachelor of Science in Computer Science, December 2010</p>
+			</div>
 		</div>
-		<div class="ribbon-edge-bottomleft"></div>
-	</div>
-	<p>Texas A&M University, Corpus Christi, Texas</p>
-	<p>Bachelor of Science in Computer Science, December 2010</p>
-	<div class="ribbon-wrapper arrow_box">
-		<div class="ribbon-front">
-            <p class="ribbonText">Experiance</p>
-		</div>
-		<div class="ribbon-edge-bottomleft"></div>
-	</div>
+
+		<div class="block">
+			<div class="label">
+				Experiance
+			</div>	
+			<div class="words">
+	<p><b>Senior UI Engineer - Djed </b> (March 2014 – Current)</p>
+	<p>Dejed builds family managment and socail web application</p>
+
+	<i>Technologies Used: JavaScript, Backbone, React, HTML, LESS, CSS, REST</i>
 				
-	<p><b>Software Engineer - Next Gen Healthcare </b> (May 2012 – Current)</p>
+	<hr>
+
+	<p><b>Software Engineer - Volusion </b> (April 2013 – March 2014)</p>
+	<p>Volusion builds tools for small to large buisnesses to build and manage all aspects of their web stores.</p>
+	<ul>
+		<li>Created UI for online application using Javascript, EXTJS, HTML, CSS.</li>
+		<li>Architected Sass structure.</li>
+		<li>Collaborate with backend team to implement REST calls.</li>
+		<li>Created internal standards around UI implementation.</li>
+	</ul>
+	<i>Technologies Used: JavaScript, EXTJS, HTML, SCSS, CSS, REST, Gimp</i>
+				
+	<hr>
+
+	<p><b>Software Engineer - Next Gen Healthcare </b> (April 2012 – April 2013)</p>
 	<p>NextGen builds medical management software for small to medium sized hospitals.</p>
-	<p>They provide a SaaS or hosted solution that acts as a CMS for the industry.</p>
 	<ul>
 		<li>Lead UI engineer on NG7 project - a software system to manage all aspects of running a hospital. Current UI lead on patient financials project.</li>
 		<li>Created UI for online application using Javascript, Jquery, HTML, CSS.</li>
@@ -60,15 +78,26 @@
 		<li>Solve general computer issues in the Computer Science Department</li>
 	</ul>
 	<i>Technologies Used: C#, SQL</i>	
-				
-	<div class="ribbon-wrapper arrow_box">
-		<div class="ribbon-front">
-            <p class="ribbonText">Personal Skills</p>
+		
+	<div class="block">
+		<div class="label">
+			Personal Skills
+		</div>	
+		<div class="words">
+			<p>JavaScript, PHP, EXTJS, Angular JS, HTML, CSS3, CSS, SASS, Compass, Jquery, C#, C++,</p>
+			<p>SQL Server, Oracle, MySql, GIT, Computer Networking, Computer Hardware, Cisco</p>
 		</div>
-		<div class="ribbon-edge-bottomleft"></div>
 	</div>
-	<p>JavaScript, PHP, EXTJS, Angular JS, HTML, CSS3, CSS, SASS, Compass, Jquery, C#, C++,</p>
-	<p>SQL Server, Oracle, MySql, GIT, Computer Networking, Computer Hardware, Cisco</p>
+
+
+	<div class="block">
+		<div class="label">
+			More Information
+		</div>	
+		<div class="words">
+			More information can be found on my <a href="http://www.linkedin.com/pub/bradley-friemel/49/952/ba9" target="_blank">linked in</a> or by contacting me directly through email. 
+		</div>
+	</div>
 HTML;
 	echo($html);
 ?>
